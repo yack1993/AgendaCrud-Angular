@@ -1,0 +1,31 @@
+<mat-card>
+  <mat-card-title>Excluir Contato</mat-card-title>
+  <form>
+    <mat-form-field>
+      <input matInput placeholder="Nome"
+      [(ngModel)]="schedule.name" name="name">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="telefone"
+      [(ngModel)]="schedule.telephone" name="telephone">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="email"
+      [(ngModel)]="schedule.email" name="email">
+    </mat-form-field>
+
+    <mat-form-field>
+      <input matInput placeholder="Data Nascimento"
+      [ngModel]="schedule.birthday | date:'yyyy-MM-dd' " name="birthday">
+    </mat-form-field>
+  </form>
+  <button mat-raised-button (click)="deletePhonebook()" color="warn">
+      Excluir
+  </button>
+
+  <button mat-raised-button (click)="cancel()">
+      Cancelar
+  </button>
+</mat-card>

@@ -1,0 +1,28 @@
+table {
+  width: 100%;
+}
+
+.edit {
+  margin-right: 10px;
+}
+
+.edit > i {
+  color: #d9cd26;
+}
+
+.delete > i {
+  color: #e35e6b;
+}
+
+
+.whatsapp-link {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  right: 100px;
+  color: #25d366;
+  border-radius: 50px;
+  font-size: 18px;
+  z-index: 1000;
+}
+
